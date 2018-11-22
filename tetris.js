@@ -418,9 +418,9 @@ function drawMessage(messageString, size) {
   var offset = xoff;
   var size = (xsize +gapsize*.9)*size;
   var yoffset = yoff + (xsize+gapsize)*10;
-  ctx.strokeStyle = "#FFF";
+  ctx.strokeStyle = "#003B46";
   ctx.strokeText(messageString,offset,yoffset,size,160);
-  ctx.strokeStyle = "#000";
+  ctx.strokeStyle = "#07575B";
   ctx.strokeText(messageString,offset,yoffset,size,100);
 }
 
@@ -445,7 +445,7 @@ function gameWin() {
   setPause(true);
 }
 function gameOver() {
-  drawMessage("Game Over", 1.45);
+  drawMessage("NUBARO", 1.96);
   setPause(true);
   //Cleanup
 
