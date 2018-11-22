@@ -4,7 +4,7 @@ body {
 	font-size: 100%;
 	color: #B0B0B0;
   background-image: url(https://static1.squarespace.com/static/51be3e56e4b09edc5f81e74c/t/54ab723fe4b01142027aaba0/1420522056098/);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
 }
 p {
