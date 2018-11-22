@@ -219,7 +219,7 @@ var setPause = function(isendgame) {
   clearInterval(mouseControlInterval);
   mouseControlInterval = "";
   //document.title = "Tetris! GAME OVER";
-  if (!isendgame) { drawPaused(); document.title="Tetris by JustStanix! PAUSED!";
+  if (!isendgame) { drawPaused(); document.title="SMART Tetris! PAUSED!";
   }
   paused = true;
   pausedBecauseLostFocus = false; // default this to false
@@ -240,7 +240,7 @@ function unPause() {
   }
   paused = false;
   pausedBecauseLostFocus = false; // default this to false
-  document.title = "Tetris by JustStanix!";
+  document.title = "SMART Tetris!";
   // chrome doesn't seem to update titlebar correctly sometimes. similar thing in safari.
   // Can't figure out a way to force it. Works great in FF.
 }
