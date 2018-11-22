@@ -21,8 +21,7 @@
 		}
 		.finger-indicator.control {
 			background-color: rgba(50,0,0,0.5);
-			border: 2px solid #a44;
-		}
+R		}
 	</style>
 	<script src='tetris.js' type="text/javascript"></script>
 	<script type='text/javascript'>
@@ -40,13 +39,13 @@
 <div id="instructions" style="position: relative">
 	<div id='controls' style="float: left" >
 		<input type='button' onclick="if (TETRIS.isPaused()) { TETRIS.unPause(); } else { TETRIS.setPause(); }" value='Pause' style="font-size: 150%" /><br/>
-		<p><input class="toggle" type='button' onclick="var i = document.getElementById(&quot;instr&quot;).style; i.display = (i.display==&quot;none&quot;?&quot;inline&quot;:&quot;none&quot;); TETRIS.setPause(); " value='Toggle Instructions' /></p>
+		<p><input class="toggle" type='button' onclick="var i = document.getElementById(&quot;instr&quot;).style; i.display = (i.display==&quot;none&quot;?&quot;inline&quot;:&quot;none&quot;); TETRIS.setPause(); " value='Instrukcije' /></p>
 	</div>
 	<div id='instr' style="display: none;">
-		<h1>Tetris by JustStanix!</h1>
+		<h1>Tetris napravio JustStanix!</h1>
     <br>
-		<p>You can now play on Android and iOS: <br>
-		Swipe anywhere to move, tap to rotate (Can also tap while swiping to rotate). Swipe down to drop.
+		<p>Sad se može igrati i na telefonu! <br>
+		Prevuci bilo gde na ekranu da bi se kretao, klik da bi se rotirao. Prevuci dole da bih pao.
 		</p>
 		<p>
 		Touch Sensitivity:
@@ -55,21 +54,19 @@
 		</p>
 
 
-		<p> On PC and Mac use arrow keys to move and space to drop.
-		Z,X to rotate in either direction. </p>
-		<p>Use P to Pause.</p>
-		<p>Use M to toggle mouse control.</br>
-		Left click to rotate and right click to drop. Mouse control is experimental.
+		<p> Na kompu strelice su za kretanje, a space da bih pao.
+		Z,X da bih rotirao u levu i desnu stranu. </p>
+		<p>P da bih pauzirao</p>
+		<p>M da bih ukljicio Mouse Control</br>
+		Levi klik za rotaciju, desni klik da bih pao. Mouse Control nije savršen!
 		</p>
-		<p> To start a new game, refresh the page (F5)! </p>
-		<p>This is an infinite tetris game. It does not speed up.
-		To score more points, drop pieces as fast
-		as you can!.</p>
-		<p>Changes coming soon (To do list): </p>
+		<p>Da bih započeo novu igru refrešuj stranicu! (F5)</p>
+		<p>Ovo je beskonačan Tetris i ne ubrzava se.</p>
+		<p>Promene uskoro! (TODO List): </p>
 		<ul>
-		<li>Centered positioning of board</li>
-		<li>Preview next piece(s)</li>
-		<li>More visual effects and animations: CSS3 transitions for animation, with fallback to JS animation. In particular I want a satisfying effect for the hard drop.</li>
+		<li>Igrica na centru ekrana</li>
+		<li>Predvideti sledeci oblik</li>
+		<li>Više animacija</li>
 		</ul>
 		<p><input type='button' onclick="var result = TETRIS.toggle_touch_draw(); if (result) {this.value = &quot;Turn Touch Debug Off&quot;; } else { this.value=&quot;Turn Touch Debug On&quot;;}" value='Toggle touch debug' /></p>
 

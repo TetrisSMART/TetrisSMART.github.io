@@ -202,7 +202,7 @@ function isPaused() {
 function drawPaused() {
   var ctx = document.getElementById("animated_canvas").getContext('2d');
   var offset = xoff;
-  var size = (xsize +gapsize*.9)*2.05;
+  var size = (xsize +gapsize*.5)*2.05;
   var yoffset = yoff + (xsize+gapsize)*10;
   ctx.strokeStyle = "#F3F4F6";
   ctx.strokeText("PAUSED",offset,yoffset,size,160);
